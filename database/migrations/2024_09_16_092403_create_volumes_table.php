@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('image_volume', 255);
             $table->integer('Price');
             $table->float('Price_Rental', 8, 2); // ปรับเป็น 8,2 แทน float(53) เพื่อให้เหมาะสมกว่า
-            $table->integer('Amount'); // ลบ auto_increment ออก
+            $table->integer('status'); // ลบ auto_increment ออก
             $table->unsignedBigInteger('Id_Manga');
             $table->unsignedBigInteger('Id_location');
 
