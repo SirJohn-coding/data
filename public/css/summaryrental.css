@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html, body {
+    height: 100%;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #23A3FF;
+    color: #ffffff;
+}
+
+.rental-summary {
+    flex-grow: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.rental-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 20px;
+}
+
+.rental-item img {
+    width: 130px;
+    height: 200px;
+    margin-right: 20px;
+}
+
+.item-details h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.item-details p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.rental-info {
+    margin-top: 20px;
+}
+
+.rental-info label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.rental-info h4 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.rental-info ul {
+    margin-left: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.action-btn {
+    padding: 10px 20px;
+    width: 150px;
+    background-color: #23A3FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.back-btn {
+    background-color: #FF6B6B;
+    margin-right: 10px;
+}
+
+.action-btn:hover {
+    background-color: #0088cc;
+}
+
+.back-btn:hover {
+    background-color: #E04848;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+h2, input[type="number"] {
+    font-size: 24px;
+    height: 40px;
+    line-height: 40px;
+    padding: 5px;
+    display: inline-block; /* ทำให้ h2 และ input อยู่บรรทัดเดียวกัน */
+    vertical-align: middle; /* จัดให้ input อยู่ตรงกลางในแนวตั้ง */
+  }  
+
+.text-blue {
+    color: #23A3FF;
+}
+
+.text-red {
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.payment-info {
+    border: 2px solid #23A3FF;
+    border-radius: 10px; /* ทำให้กรอบโค้ง */
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f0f8ff;
+}
+
+.payment-info h3 {
+    margin-bottom: 10px;
+}
+
+.payment-info ul {
+    margin-left: 20px;
+}
+
+.payment-info li {
+    margin-bottom: 5px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0; /* ลบกรอบ */
+    border-radius: 10px;
+}
+
+.text-bold {
+    font-weight: bold;
+}

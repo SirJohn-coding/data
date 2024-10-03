@@ -1,0 +1,100 @@
+body {
+    background-color: #f0f0f0; /* กำหนดสีพื้นหลังของหน้า */
+    font-family: 'Fredoka', sans-serif;
+}
+
+.sidebar {
+    background-color: #23a3ff; /* กำหนดสีพื้นหลังของแถบด้านข้าง */
+    padding: 20px; /* เพิ่มระยะห่างภายในแถบด้านข้าง */
+    min-height: 100vh; /* กำหนดความสูงขั้นต่ำให้เต็มความสูงของหน้าจอ */
+    color: white; /* กำหนดสีข้อความในแถบด้านข้าง */
+    font-weight: bold; /* ตั้งค่าความหนาของข้อความให้หนา */
+}
+
+.sidebar a {
+    color: white; /* กำหนดสีข้อความของลิงก์ในแถบด้านข้าง */
+    display: block; /* ทำให้ลิงก์แสดงเป็นบล็อก */
+    margin-bottom: 10px; /* เพิ่มระยะห่างด้านล่างของลิงก์ */
+    text-decoration: none; /* ลบเส้นใต้ลิงก์ */
+}
+
+.sidebar a:hover {
+    background-color: #0056b3; /* เปลี่ยนสีพื้นหลังของลิงก์เมื่อวางเมาส์ */
+    padding: 10px; /* เพิ่ม padding เพื่อให้ลิงก์ดูใหญ่ขึ้น */
+    border-radius: 5px; /* ทำมุมให้โค้ง */
+}
+
+.content {
+    padding: 20px; /* เพิ่มระยะห่างภายในของเนื้อหา */
+}
+
+.search-bar {
+    display: flex; /* ใช้ flexbox เพื่อจัดเรียงองค์ประกอบ */
+    width: 1240px; /* กำหนดความกว้างของ input */
+    height: 40px; /* กำหนดความสูงของ input */
+    gap: 20px; /* ระยะห่างระหว่างองค์ประกอบ */
+    margin-top: 10px; /* ระยะห่างด้านบน */
+    margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+}
+
+.table-container {
+    background-color: white; /* กำหนดสีพื้นหลังของตาราง */
+    padding: 20px; /* เพิ่มระยะห่างภายในของตาราง */
+    border-radius: 8px; /* ทำมุมให้โค้ง */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กับตาราง */
+}
+
+.user-info {
+    text-align: right; /* จัดตำแหน่งข้อความไปทางขวา */
+    color: #007bff; /* กำหนดสีข้อความ */
+}
+
+.search-container {
+    margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่างของ container ค้นหา */
+}
+
+.search-form {
+    display: flex; /* ใช้ flexbox เพื่อจัดเรียงองค์ประกอบ */
+    align-items: center; /* จัดให้อยู่กลางในแนวตั้ง */
+}
+
+.search-form input {
+    flex: 1; /* กำหนดให้ input ขยายเต็มที่ภายใน flex container */
+}
+
+.search-form button {
+    margin-left: 10px; /* เพิ่มระยะห่างด้านซ้ายของปุ่ม */
+}
+
+.btn {
+    width: 150px; /* กำหนดความกว้างของปุ่ม */
+    height: 40px; /* กำหนดความสูงของปุ่ม */
+}
+
+.sidebar h3.active a {
+    background-color: #0056b3; /* สีพื้นหลังเมื่อเลือก */
+    color: white; /* เปลี่ยนสีตัวอักษรเมื่อเลือก */
+    padding: 10px; /* เพิ่ม padding เพื่อให้ลิงก์ดูใหญ่ขึ้น */
+    border-radius: 5px; /* ทำมุมให้โค้ง */
+}
+
+.navbar-custom {
+    background-color: #23a3ff; /* กำหนดสีพื้นหลังของแถบ navbar */
+    color: white; /* กำหนดสีข้อความใน navbar */
+    height: 50px; /* กำหนดความสูงของแถบ */
+    display: flex; /* ใช้ flexbox เพื่อจัดเรียงองค์ประกอบ */
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+}
+
+.navbar-custom .nav-link {
+    color: white; /* กำหนดสีข้อความของลิงก์ใน navbar */
+}
+
+.navbar-custom .nav-link:hover {
+    color: #adb5bd; /* เปลี่ยนสีข้อความเมื่อวางเมาส์ */
+}
+
+.sidebar h1 {
+    margin-top: -30px; /* ปรับระยะห่างด้านบนของ h1 */
+    padding-top: 0; /* ลบ padding ด้านบนหากมี */
+}

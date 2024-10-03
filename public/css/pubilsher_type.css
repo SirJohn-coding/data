@@ -1,0 +1,119 @@
+/* กำหนดสีพื้นหลังของ body */
+body {
+    background-color: #f0f0f0; /* สีเทาอ่อน */
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* กำหนดสไตล์สำหรับแถบด้านข้าง */
+.sidebar {
+    background-color: #23a3ff; /* สีฟ้าสำหรับพื้นหลังแถบด้านข้าง */
+    padding: 20px; /* ระยะห่างด้านในของแถบด้านข้าง */
+    min-height: 100vh; /* ความสูงขั้นต่ำเต็มหน้าจอ */
+    color: white; /* เปลี่ยนสีตัวอักษรเป็นสีขาว */
+    font-weight: bold; /* ตัวหนาสำหรับตัวอักษร */
+}
+
+/* สไตล์สำหรับลิงก์ในแถบด้านข้าง */
+.sidebar a {
+    color: white; /* สีตัวอักษรของลิงก์ */
+    display: block; /* ทำให้ลิงก์อยู่ในบล็อกแยกกัน */
+    margin-bottom: 10px; /* ระยะห่างด้านล่างของลิงก์ */
+    text-decoration: none; /* ลบเส้นใต้จากลิงก์ */
+}
+
+/* สไตล์สำหรับลิงก์เมื่อชี้เมาส์ */
+.sidebar a:hover {
+    background-color: #0056b3; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+    padding: 10px; /* เพิ่ม padding เมื่อ hover */
+    border-radius: 5px; /* ทำมุมให้โค้ง */
+}
+
+/* กำหนดสไตล์สำหรับเนื้อหาในคอนเทนเนอร์ */
+.content {
+    padding: 20px; /* ระยะห่างภายในของเนื้อหา */
+}
+
+/* กำหนดสไตล์สำหรับแถบค้นหา */
+.search-bar {
+    margin-top: 10px; /* ระยะห่างด้านบน */
+    margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+    display: flex; /* ใช้ flexbox */
+    justify-content: space-between; /* จัดระยะห่างระหว่างองค์ประกอบ */
+    width: 1240px; /* ความกว้างของ input */
+    height: 40px; /* ความสูงของ input */
+    gap: 20px; /* ระยะห่างระหว่างองค์ประกอบ */
+}
+
+/* กำหนดสไตล์สำหรับคอนเทนเนอร์ตาราง */
+.table-container {
+    background-color: white; /* สีพื้นหลังของตาราง */
+    padding: 20px; /* ระยะห่างด้านในของตาราง */
+    border-radius: 8px; /* ทำมุมให้โค้ง */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เงาใต้ตาราง */
+}
+
+/* กำหนดสไตล์สำหรับข้อมูลผู้ใช้ */
+.user-info {
+    text-align: right; /* จัดข้อความไปทางขวา */
+    color: #007bff; /* เปลี่ยนสีตัวอักษร */
+}
+
+/* กำหนดสไตล์สำหรับคอนเทนเนอร์การค้นหา */
+.search-container {
+    margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+}
+
+/* กำหนดสไตล์สำหรับฟอร์มค้นหา */
+.search-form {
+    display: flex; /* ใช้ flexbox */
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+}
+
+/* กำหนดสไตล์สำหรับช่องกรอกค้นหา */
+.search-form input {
+    flex: 1; /* ให้ช่องกรอกขยายเต็มที่ว่าง */
+}
+
+/* กำหนดสไตล์สำหรับปุ่มค้นหา */
+.search-form button {
+    margin-left: 10px; /* ระยะห่างด้านซ้ายของปุ่ม */
+}
+
+/* กำหนดขนาดของปุ่ม */
+.btn {
+    width: 100px; /* ความกว้างของปุ่ม */
+    height: 40px; /* ความสูงของปุ่ม */
+}
+
+/* สไตล์สำหรับลิงก์ที่เลือกในแถบด้านข้าง */
+.sidebar h3.active a {
+    background-color: #0056b3; /* สีพื้นหลังเมื่อเลือก */
+    color: white; /* เปลี่ยนสีตัวอักษร */
+    padding: 10px; /* เพิ่ม padding เพื่อให้ลิงก์ดูใหญ่ขึ้น */
+    border-radius: 5px; /* ทำมุมให้โค้ง */
+}
+
+/* กำหนดสไตล์สำหรับแถบด้านบน */
+.navbar-custom {
+    background-color: #23a3ff; /* สีฟ้าสำหรับแถบด้านบน */
+    color: white; /* เปลี่ยนสีตัวอักษรเป็นสีขาว */
+    height: 50px; /* กำหนดความสูงของแถบ */
+    display: flex; /* ใช้ flexbox */
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+}
+
+/* สไตล์สำหรับลิงก์ในแถบด้านบน */
+.navbar-custom .nav-link {
+    color: white; /* สีตัวอักษรของลิงก์ */
+}
+
+/* สไตล์สำหรับลิงก์เมื่อ hover ในแถบด้านบน */
+.navbar-custom .nav-link:hover {
+    color: #adb5bd; /* สีสำหรับ hover */
+}
+
+/* สไตล์สำหรับหัวข้อในแถบด้านข้าง */
+.sidebar h1 {
+    margin-top: -30px; /* ปรับระยะห่างด้านบน */
+    padding-top: 0; /* ลบ padding ด้านบนหากมี */
+}

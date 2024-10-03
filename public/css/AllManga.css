@@ -1,0 +1,21 @@
+body {
+    font-family: 'Sarabun', sans-serif;
+}
+
+.carousel-inner img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.manga-section h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.manga-section img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.manga-section img:hover {
+    transform: scale(1.05);
+}

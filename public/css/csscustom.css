@@ -1,0 +1,121 @@
+/* body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} */
+
+.flexsquare {
+    display: flex;
+    align-items: flex-start; /* ให้ขอบบนของคอนเทนเนอร์ตรงกัน */
+    gap: 20px;
+    /* ระยะห่างระหว่างสองคอนเทนเนอร์ */
+}
+
+#container4link {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#linkbar {
+    margin-left: 50px;
+    margin-right: 50px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.square {
+    border: 1px solid #dee2e6;
+    /* กรอบของฟอร์ม */
+    padding: 20px;
+    border-radius: 20px;
+    /* ขอบโค้ง */
+    background-color: #ffffff;
+    /* พื้นหลังของฟอร์ม */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* เงาของฟอร์ม */
+    padding: 60px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-direction: column;
+    /* จัดแนวแนวตั้ง */
+    flex: 1;
+}
+
+.image-square {
+    display: flex;
+    justify-content: center;
+    /* จัดให้อะไรก็ตามที่อยู่ใน container นี้ อยู่ตรงกลาง */
+    margin-top: 20px;
+    /* เพิ่มระยะห่างจาก h1 */
+}
+
+ .inner-square {
+    border: 1px solid #dee2e6;
+    /* กรอบของฟอร์ม */
+    padding: 20px;
+    border-radius: 20px;
+    /* ขอบโค้ง */
+    background-color: #ffffff;
+    /* พื้นหลังของฟอร์ม */
+    padding: 60px;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 40px;
+    margin: 0 auto;
+    flex-direction: column;
+    /* จัดแนวแนวตั้ง */
+} 
+
+ .inner-square-text,
+b {
+    font-size: 18px;
+} 
+a.hover:hover{
+    border-radius: 15px;
+    padding: 10px 10px;
+    background-color: #D9D9D9;
+}
+
+/* a.no-hover:hover {
+    border-radius: none;
+    padding: 0;
+    background-color: transparent;
+} */
+.squareside {
+    border: 1px solid #dee2e6;
+    /* กรอบของกล่องด้านข้าง */
+    padding: 20px;
+    border-radius: 20px;
+    /* ขอบโค้ง */
+    background-color: #ffffff;
+    /* พื้นหลังของกล่อง */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* เงาของกล่อง */
+    width: 300px;
+    /* กำหนดความกว้างของกล่องด้านข้าง */
+    margin-left: 40px;
+    justify-content: center;
+}
+.squareside-text,a{
+    font-size: 24px;
+    text-decoration: none;
+}
+.box {
+    display: inline-flex; /* แสดงในแนวนอน */
+    align-items: center; /* จัดแนวกลางในแนวตั้ง */
+    margin-top: 15px; /* ระยะห่างด้านบน */
+    
+}
+.box a {
+    font-size: 8px; /* ปรับขนาดตัวอักษรที่ต้องการ */
+    text-decoration: none; /* ปิดการขีดเส้นใต้ */
+    color: black; /* ปรับสีตัวอักษร */
+}

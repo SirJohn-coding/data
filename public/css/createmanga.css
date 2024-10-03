@@ -1,0 +1,124 @@
+/* กำหนดสีพื้นหลังของ body */
+body {
+    background-color: #f0f0f0; /* สีเทาอ่อน */
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* กำหนดสไตล์สำหรับแถบด้านข้าง */
+.sidebar {
+    background-color: #23a3ff; /* สีฟ้าสำหรับพื้นหลังแถบด้านข้าง */
+    padding: 20px; /* ระยะห่างด้านในของแถบด้านข้าง */
+    height: 100vh; /* ความสูงเต็มหน้าจอ */
+    color: white; /* เปลี่ยนสีตัวอักษรเป็นสีขาว */
+    font-weight: bold; /* ตัวหนาสำหรับตัวอักษร */
+}
+
+/* สไตล์สำหรับลิงก์ในแถบด้านข้าง */
+.sidebar a {
+    color: white; /* สีตัวอักษรของลิงก์ */
+    display: block; /* ทำให้ลิงก์อยู่ในบล็อกแยกกัน */
+    margin-bottom: 10px; /* ระยะห่างด้านล่างของลิงก์ */
+    text-decoration: none; /* ลบเส้นใต้จากลิงก์ */
+}
+
+/* สไตล์สำหรับลิงก์เมื่อชี้เมาส์ */
+.sidebar a:hover {
+    background-color: #0056b3; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+    padding: 10px; /* เพิ่ม padding เมื่อ hover */
+    border-radius: 5px; /* ทำมุมให้โค้ง */
+}
+
+/* กำหนดสไตล์สำหรับเนื้อหาในคอนเทนเนอร์ */
+.content {
+    padding: 20px; /* ระยะห่างภายในของเนื้อหา */
+}
+
+/* สไตล์สำหรับคอนเทนเนอร์การอัปโหลด */
+.upload-container {
+    background-color: #f8f9fa; /* สีพื้นหลังอ่อน */
+    border: 3px solid #ced4da; /* กำหนดขนาดกรอบเป็น 3px */
+    border-radius: 8px; /* ทำมุมให้โค้ง */
+    padding: 20px; /* ระยะห่างด้านใน */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เงาใต้กล่อง */
+    max-width: 100%; /* ความกว้างสูงสุดของคอนเทนเนอร์ */
+}
+
+/* สไตล์สำหรับช่องใส่ไฟล์ */
+.upload-container input[type="file"] {
+    width: 100%; /* กำหนดให้ความกว้างของช่องใส่รูปเต็มคอนเทนเนอร์ */
+    padding: 10px; /* ระยะห่างด้านใน */
+    background-color: #f8f9fa; /* สีพื้นหลัง */
+    border: 1px solid #ced4da; /* กำหนดกรอบ */
+    border-radius: 5px; /* ทำมุมให้โค้ง */
+}
+
+/* กำหนดความสูงของช่องข้อความ */
+input[type="text"], .form-control {
+    height: 40px; /* ความสูงของช่องกรอกข้อมูล */
+}
+
+/* กำหนดความสูงของ textarea */
+textarea.form-control {
+    height: auto; /* ปรับความสูงอัตโนมัติตามเนื้อหา */
+}
+
+/* สไตล์สำหรับปุ่ม */
+button {
+    padding: 10px 20px; /* ระยะห่างด้านในของปุ่ม */
+    border-radius: 5px; /* ทำมุมให้โค้ง */
+}
+
+/* สไตล์สำหรับปุ่มสีฟ้า */
+.btn-primary {
+    background-color: #007bff; /* สีฟ้าสำหรับปุ่ม */
+    border: none; /* ไม่มีกรอบ */
+}
+
+/* สไตล์สำหรับปุ่มสีแดง */
+.btn-danger {
+    background-color: #dc3545; /* สีแดงสำหรับปุ่ม */
+    border: none; /* ไม่มีกรอบ */
+}
+
+/* สไตล์สำหรับ flexbox */
+.d-flex {
+    display: flex; /* ใช้ flexbox สำหรับจัดเรียง */
+}
+
+/* สไตล์สำหรับการจัดตำแหน่ง flex-end */
+.justify-content-end {
+    justify-content: flex-end; /* จัดตำแหน่งไปที่ขวา */
+}
+
+/* สไตล์สำหรับลิงก์ที่เลือกในแถบด้านข้าง */
+.sidebar h3.active a {
+    background-color: #0056b3; /* สีพื้นหลังเมื่อเลือก */
+    color: white; /* เปลี่ยนสีตัวอักษร */
+    padding: 10px; /* เพิ่ม padding เพื่อให้ลิงก์ดูใหญ่ขึ้น */
+    border-radius: 5px; /* ทำมุมให้โค้ง */
+}
+
+/* สไตล์สำหรับแถบด้านบน */
+.navbar-custom {
+    background-color: #23a3ff; /* สีฟ้าสำหรับแถบด้านบน */
+    color: white; /* เปลี่ยนสีตัวอักษรเป็นสีขาว */
+    height: 50px; /* กำหนดความสูงของแถบ */
+    display: flex; /* ใช้ flexbox */
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+}
+
+/* สไตล์สำหรับลิงก์ในแถบด้านบน */
+.navbar-custom .nav-link {
+    color: white; /* สีตัวอักษรของลิงก์ */
+}
+
+/* สไตล์สำหรับลิงก์เมื่อ hover ในแถบด้านบน */
+.navbar-custom .nav-link:hover {
+    color: #adb5bd; /* สีสำหรับ hover */
+}
+
+/* สไตล์สำหรับหัวข้อในแถบด้านข้าง */
+.sidebar h1 {
+    margin-top: -30px; /* ปรับระยะห่างด้านบน */
+    padding-top: 0; /* ลบ padding ด้านบนหากมี */
+}

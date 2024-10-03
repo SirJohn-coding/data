@@ -1,0 +1,182 @@
+/* กำหนดสีพื้นหลังของ body */
+body {
+    background-color: #f0f0f0;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* รูปแบบสำหรับแถบด้านข้าง */
+.sidebar {
+    background-color: #23a3ff; /* สีพื้นหลังของแถบด้านข้าง */
+    padding: 20px; /* กำหนดระยะห่างภายใน */
+    min-height: 100vh; /* ทำให้แถบด้านข้างสูงเต็มหน้าจอ */
+    color: white; /* สีข้อความ */
+    font-weight: bold; /* ทำให้ข้อความหนา */
+}
+
+/* รูปแบบสำหรับลิงก์ในแถบด้านข้าง */
+.sidebar a {
+    color: white; /* สีข้อความของลิงก์ */
+    display: block; /* ทำให้ลิงก์อยู่ในบล็อก */
+    margin-bottom: 10px; /* ระยะห่างระหว่างลิงก์ */
+    text-decoration: none; /* ลบเส้นใต้ */
+}
+
+/* รูปแบบเมื่อวางเมาส์อยู่บนลิงก์ */
+.sidebar a:hover {
+    background-color: #0056b3; /* สีพื้นหลังเมื่อ hover */
+    padding: 10px; /* เพิ่ม padding เพื่อให้ลิงก์ดูใหญ่ขึ้น */
+    border-radius: 5px; /* ทำมุมให้โค้ง */
+}
+
+/* รูปแบบสำหรับเนื้อหา */
+.content {
+    padding: 20px; /* ระยะห่างภายในเนื้อหา */
+}
+
+/* รูปแบบสำหรับตาราง */
+.table-container {
+    background-color: white; /* สีพื้นหลังของตาราง */
+    padding: 20px; /* ระยะห่างภายในตาราง */
+    border-radius: 8px; /* ทำมุมให้โค้ง */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เงาของตาราง */
+}
+
+/* การจัดตำแหน่งข้อความในตาราง */
+.table td, .table th {
+    text-align: center; /* จัดกลางข้อมูลในเซลล์ */
+}
+
+/* รูปภาพในตาราง */
+.table img {
+    max-width: 200px; /* ขนาดสูงสุดของรูปภาพ */
+    height: auto; /* ปรับความสูงของรูปภาพอัตโนมัติ */
+}
+
+/* ข้อมูลผู้ใช้ */
+.user-info {
+    text-align: right; /* จัดข้อความไปทางขวา */
+    color: #007bff; /* สีข้อความ */
+}
+
+/* รูปแบบสำหรับช่องค้นหา */
+.search-bar {
+    display: flex; /* ใช้ flexbox เพื่อจัดเรียง */
+    align-items: center; /* จัดกลางในแนวตั้ง */
+    gap: 20px; /* ระยะห่างระหว่างองค์ประกอบ */
+}
+
+/* กำหนดขนาดสำหรับช่องค้นหา */
+#searchManga {
+    width: 300px; /* ความกว้างของช่องค้นหา */
+    height: 41px; /* ความสูงของช่องค้นหา */
+}
+
+/* รูปแบบสำหรับปุ่มค้นหา */
+.btn-primary {
+    flex-shrink: 0; /* ป้องกันปุ่มจากการหดตัว */
+    width: 130px; /* ความกว้างของปุ่มค้นหา */
+    height: 40px; /* ความสูงของปุ่มค้นหา */
+}
+
+/* รูปแบบสำหรับปุ่มทั่วไป */
+.btn {
+    width: 100px; /* ความกว้างของปุ่ม */
+    height: 40px; /* ความสูงของปุ่ม */
+    font-size: 14px; /* ขนาดตัวอักษร */
+    padding: 0; /* ระยะห่างภายในปุ่ม */
+    border-radius: 5px; /* ทำมุมให้โค้ง */
+    text-align: center; /* จัดกึ่งกลางข้อความ */
+    line-height: 40px; /* กำหนดระยะห่างของบรรทัด */
+    display: inline-flex; /* ใช้ inline-flex เพื่อจัดตำแหน่งให้ดีขึ้น */
+    align-items: center; /* จัดแนวกลางในแนวตั้ง */
+    justify-content: center; /* จัดแนวกลางในแนวนอน */
+}
+
+/* รูปแบบสำหรับลิงก์ที่ถูกเลือกในแถบด้านข้าง */
+.sidebar h3.active a {
+    background-color: #0056b3; /* สีพื้นหลังเมื่อเลือก */
+    color: white; /* เปลี่ยนสีตัวอักษร */
+    padding: 10px; /* เพิ่ม padding เพื่อให้ลิงก์ดูใหญ่ขึ้น */
+    border-radius: 5px; /* ทำมุมให้โค้ง */
+}
+
+/* รูปแบบสำหรับแถบเมนูด้านบน */
+.navbar-custom {
+    background-color: #23a3ff; /* สีพื้นหลังของแถบเมนู */
+    color: white; /* สีข้อความในแถบเมนู */
+    height: 50px; /* กำหนดความสูงของแถบ */
+    display: flex; /* ใช้ flexbox เพื่อจัดเรียง */
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+}
+
+/* รูปแบบสำหรับลิงก์ในแถบเมนู */
+.navbar-custom .nav-link {
+    color: white; /* สีข้อความของลิงก์ */
+}
+
+/* รูปแบบเมื่อวางเมาส์อยู่บนลิงก์ในแถบเมนู */
+.navbar-custom .nav-link:hover {
+    color: #adb5bd; /* สีสำหรับ hover */
+}
+
+/* ปรับระยะห่างด้านบนสำหรับหัวข้อในแถบด้านข้าง */
+.sidebar h1 {
+    margin-top: -30px; /* ปรับระยะห่างด้านบน */
+    padding-top: 0; /* ลบ padding ด้านบนหากมี */
+}
+
+/* ตั้งค่าให้ช่องใส่รูปภาพเต็มคอนเทนเนอร์ */
+.upload-container {
+    background-color: #f8f9fa; /* สีพื้นหลังของคอนเทนเนอร์ */
+    border: 3px solid #ced4da; /* ขอบของคอนเทนเนอร์ */
+    border-radius: 8px; /* ทำมุมให้โค้ง */
+    padding: 20px; /* ระยะห่างภายในคอนเทนเนอร์ */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เงาของคอนเทนเนอร์ */
+    max-width: 100%; /* จำกัดความกว้างไม่ให้เกินคอนเทนเนอร์ */
+}
+
+/* รูปแบบสำหรับช่องใส่รูปภาพในคอนเทนเนอร์ */
+.upload-container input[type="file"] {
+    width: 100%; /* ความกว้างเต็มคอนเทนเนอร์ */
+    padding: 10px; /* ระยะห่างภายในช่องใส่รูป */
+    background-color: #f8f9fa; /* สีพื้นหลังของช่องใส่รูป */
+    border: 1px solid #ced4da; /* ขอบของช่องใส่รูป */
+    border-radius: 5px; /* ทำมุมให้โค้ง */
+}
+
+/* กำหนดขนาดของ input และ textarea */
+input[type="text"], .form-control {
+    height: 40px; /* ความสูงของ input */
+}
+
+textarea.form-control {
+    height: auto; /* ปรับความสูงอัตโนมัติสำหรับ textarea */
+}
+
+/* รูปแบบสำหรับปุ่มทั่วไป */
+button {
+    padding: 10px 20px; /* ระยะห่างภายในปุ่ม */
+    border-radius: 5px; /* ทำมุมให้โค้ง */
+}
+
+/* รูปแบบสำหรับปุ่มที่มีสีหลัก */
+.btn-primary {
+    background-color: #007bff; /* สีพื้นหลังของปุ่ม */
+    border: none; /* ลบขอบ */
+}
+
+/* รูปแบบสำหรับปุ่มที่มีสีอันตราย */
+.btn-danger {
+    background-color: #dc3545; /* สีพื้นหลังของปุ่มอันตราย */
+    border: none; /* ลบขอบ */
+}
+
+/* รูปแบบสำหรับ Flexbox */
+.d-flex {
+    display: flex; /* ใช้ flexbox */
+}
+
+/* จัดให้ Flexbox อยู่ที่ด้านขวา */
+.justify-content-end {
+    justify-content: flex-end; /* จัดตำแหน่งไปทางขวา */
+}
